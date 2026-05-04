@@ -109,7 +109,7 @@ export default function ServicesSection() {
         <Grid container spacing={3}>
           {SERVICES.map(({ icon, title, description }, i) => (
             <Grid item key={title} xs={12} sm={6} lg={4} sx={{ display: 'flex' }}>
-              <FadeInUp delay={i * 0.06} className="h-full">
+              <FadeInUp delay={i * 0.06} style={{ height: '100%', width: '100%' }}>
               <Card sx={{ height: '100%', borderRadius: 3 }}>
                 <CardContent sx={{ p: 4 }}>
                   <Box
