@@ -106,11 +106,11 @@ export default function ServicesSection() {
           </Typography>
         </Box>
 
-        <Grid container spacing={3}>
+        <Grid container spacing={3} alignItems="stretch">
           {SERVICES.map(({ icon, title, description }, i) => (
-            <Grid item key={title} xs={12} sm={6} lg={4} sx={{ display: 'flex' }}>
-              <FadeInUp delay={i * 0.06} style={{ height: '100%', width: '100%' }}>
-              <Card sx={{ height: '100%', borderRadius: 3 }}>
+            <Grid item key={title} xs={12} sm={6} lg={4} sx={{ display: 'flex', flexDirection: 'column' }}>
+              <FadeInUp delay={i * 0.06} style={{ flex: 1, display: 'flex', flexDirection: 'column' }}>
+              <Card sx={{ flex: 1, borderRadius: 3 }}>
                 <CardContent sx={{ p: 4 }}>
                   <Box
                     sx={{
