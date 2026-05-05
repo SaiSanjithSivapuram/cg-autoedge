@@ -1,26 +1,34 @@
-@import "tailwindcss";
+/* Tailwind utilities (no preflight — MUI CssBaseline handles resets) */
+@import "tailwindcss/utilities";
 
+/* ─── Design Tokens ─────────────────────────────────────────────────────── */
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --ae-primary:       #1E293B;
+  --ae-primary-dark:  #0F172A;
+  --ae-secondary:     #334155;
+  --ae-accent:        #DC2626;
+  --ae-accent-hover:  #B91C1C;
+  --ae-bg:            #F8FAFC;
+  --ae-fg:            #0F172A;
+  --ae-muted:         #E9EDF1;
+  --ae-muted-fg:      #64748B;
+  --ae-border:        #E2E8F0;
+  --ae-card:          #FFFFFF;
+  --ae-font-heading:  'Lexend', sans-serif;
+  --ae-font-body:     'Source Sans 3', sans-serif;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+/* ─── Accessibility ──────────────────────────────────────────────────────── */
+.skip-link {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  background: var(--ae-accent);
+  color: #fff;
+  padding: 8px 16px;
+  z-index: 9999;
+  font-weight: 600;
+  border-radius: 0 0 6px 0;
+  transition: top 200ms ease;
 }
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
-}
+.skip-link:focus { top: 0; }

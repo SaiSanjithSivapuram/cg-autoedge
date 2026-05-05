@@ -67,9 +67,9 @@ export default function HowItWorksSection() {
 
         <Grid container spacing={3} alignItems="stretch">
           {STEPS.map(({ number, title, description }, i) => (
-            <Grid item key={number} xs={12} sm={6} lg={3} sx={{ display: 'flex', flexDirection: 'column' }}>
-              <FadeInUp delay={i * 0.08} style={{ flex: 1, display: 'flex', flexDirection: 'column' }}>
-              <Card sx={{ flex: 1, borderRadius: 3 }}>
+            <Grid item key={number} xs={12} sm={6} lg={3}>
+              {/* <FadeInUp delay={i * 0.08}> */}
+              <Card sx={{ borderRadius: 3, height: '280px', minHeight: '280px', maxHeight: '280px', overflow: 'hidden' }}>
                 <CardContent sx={{ p: 4 }}>
                   <Box
                     aria-hidden="true"
@@ -102,7 +102,7 @@ export default function HowItWorksSection() {
                   </Typography>
                 </CardContent>
               </Card>
-              </FadeInUp>
+              {/* </FadeInUp> */}
             </Grid>
           ))}
         </Grid>

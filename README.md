@@ -1,36 +1,57 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# CG AutoEdge
 
-## Getting Started
+Landing page for CG AutoEdge — a professional car deal negotiation service. Clients submit a vehicle request and expert negotiators handle all dealership communication to secure the best possible price.
 
-First, run the development server:
+## Stack
+
+- **Next.js 16.2.4** (App Router, Turbopack)
+- **MUI v5** — primary component library
+- **Tailwind v4** — utilities only (no preflight)
+- **Framer Motion v12** — scroll-reveal animations
+- **Redux Toolkit** — contact form state
+- **TypeScript**
+
+## Development
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000).
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Build
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+npm run build
+npm start
+```
 
-## Learn More
+## Project Structure
 
-To learn more about Next.js, take a look at the following resources:
+```
+src/
+├── app/               # Next.js App Router pages + layout
+├── components/
+│   ├── layout/        # Navbar, Footer
+│   ├── sections/      # Landing page sections (Server Components)
+│   ├── forms/         # ContactForm (Client Component)
+│   └── ui/            # Shared UI utilities (FadeInUp)
+├── lib/               # Redux store, slices, typed hooks
+└── providers/         # MuiThemeProvider (emotion SSR), ReduxProvider
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+See `CLAUDE.md` for full architecture details, design system, and conventions.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Environment Variables
 
-## Deploy on Vercel
+| Variable | Description | Default |
+|----------|-------------|---------|
+| `NEXT_PUBLIC_BASE_URL` | Canonical site URL | `https://cgautoedge.com` |
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Pages
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+| Route | Description |
+|-------|-------------|
+| `/` | Marketing landing page (Hero, Stats, How It Works, Services, Testimonials, FAQ, CTA) |
+| `/contact` | Free quote request form |
