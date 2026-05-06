@@ -1,0 +1,50 @@
+[debug] [2026-05-06T23:45:41.907Z] ----------------------------------------------------------------------
+[debug] [2026-05-06T23:45:41.908Z] Command:       /usr/local/bin/node /usr/local/bin/firebase init
+[debug] [2026-05-06T23:45:41.908Z] CLI Version:   15.17.0
+[debug] [2026-05-06T23:45:41.908Z] Platform:      darwin
+[debug] [2026-05-06T23:45:41.908Z] Node Version:  v20.16.0
+[debug] [2026-05-06T23:45:41.908Z] Time:          Wed May 06 2026 19:45:41 GMT-0400 (Eastern Daylight Time)
+[debug] [2026-05-06T23:45:41.909Z] ----------------------------------------------------------------------
+[debug] 
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  /Users/sanjithsivapuram/Documents/Projects/CG-AutoEdge/cg-autoedge
+
+Before we get started, keep in mind:
+
+  * You are initializing within an existing Firebase project directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] 
+[debug] [2026-05-06T23:45:44.054Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2026-05-06T23:45:44.055Z] > authorizing via signed-in user (sivapuramsaisanjith@gmail.com)
+[debug] [2026-05-06T23:45:44.057Z] Checked if tokens are valid: true, expires at: 1778114254334
+[debug] [2026-05-06T23:45:44.057Z] Checked if tokens are valid: true, expires at: 1778114254334
+[debug] [2026-05-06T23:45:44.059Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/cgautoedge [none]
+[debug] [2026-05-06T23:45:45.473Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/cgautoedge 200
+[debug] [2026-05-06T23:45:45.473Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/cgautoedge {"projectId":"cgautoedge","projectNumber":"615496431548","displayName":"cgautoedge","name":"projects/cgautoedge","resources":{"hostingSite":"cgautoedge"},"state":"ACTIVE","etag":"1_55764a33-4416-4230-8de1-c1bf69c97de1"}
+[info] i  Using project cgautoedge (cgautoedge) . 
+[info] 
+=== Hosting Setup
+[info] 
+[debug] [2026-05-06T23:45:48.170Z] Checked if tokens are valid: true, expires at: 1778114254334
+[debug] [2026-05-06T23:45:48.170Z] Checked if tokens are valid: true, expires at: 1778114254334
+[debug] [2026-05-06T23:45:48.171Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/cgautoedge [none]
+[debug] [2026-05-06T23:45:48.492Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/cgautoedge 200
+[debug] [2026-05-06T23:45:48.493Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/cgautoedge {"projectId":"cgautoedge","projectNumber":"615496431548","displayName":"cgautoedge","name":"projects/cgautoedge","resources":{"hostingSite":"cgautoedge"},"state":"ACTIVE","etag":"1_55764a33-4416-4230-8de1-c1bf69c97de1"}
+[info] 
+[info] Your public directory is the folder (relative to your project directory) that
+[info] will contain Hosting assets to be uploaded with firebase deploy. If you
+[info] have a build process for your assets, use your build's output directory.
+[info] 

@@ -1,0 +1,14 @@
+{
+  "permissions": {
+    "allow": [
+      "Read(//Users/sanjithsivapuram/.claude/plugins/cache/ui-ux-pro-max-skill/ui-ux-pro-max/2.5.0/.claude/skills/ui-ux-pro-max/**)",
+      "Bash(python3 scripts/search.py \"automotive car negotiation service professional trust\" --design-system -p \"CG AutoEdge\" -f markdown)",
+      "Bash(python3 scripts/search.py \"automotive service landing page trust conversion\" --domain product -n 5)",
+      "Bash(python3 scripts/search.py \"landing hero social-proof trust\" --domain landing -n 5)",
+      "Bash(python3 scripts/search.py \"service landing page trust conversion\" --domain landing -n 5)",
+      "Bash(python3 scripts/search.py \"professional minimal dark mode service\" --domain style -n 4)",
+      "Bash(node *)",
+      "Bash(git merge *)"
+    ]
+  }
+}
