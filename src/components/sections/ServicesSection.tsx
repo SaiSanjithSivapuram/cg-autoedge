@@ -31,13 +31,12 @@ const SERVICES = [
   {
     icon: (
       <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-        <polyline points="17 1 21 5 17 9"/><path d="M3 11V9a4 4 0 0 1 4-4h14"/>
-        <polyline points="7 23 3 19 7 15"/><path d="M21 13v2a4 4 0 0 1-4 4H3"/>
+        <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
       </svg>
     ),
-    title: 'Trade-In Valuation',
+    title: 'Warranty Negotiation',
     description:
-      'We independently appraise your trade-in using Kelley Blue Book and auction data so dealers cannot lowball you on your current vehicle.',
+      'We push back on overpriced dealer warranty packages and negotiate extended coverage terms, deductibles, and exclusions so you get real protection at a fair price.',
   },
   {
     icon: (

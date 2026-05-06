@@ -8,7 +8,7 @@ import MuiLink from '@mui/material/Link';
 const SERVICES = [
   'New Car Negotiation',
   'Used Car Negotiation',
-  'Trade-In Valuation',
+  'Warranty Negotiation',
   'Lease Optimization',
   'Fleet Purchasing',
 ];
