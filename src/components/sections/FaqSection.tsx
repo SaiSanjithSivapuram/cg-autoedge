@@ -52,7 +52,7 @@ export default function FaqSection() {
       id="faq"
       component="section"
       aria-labelledby="faq-heading"
-      sx={{ backgroundColor: '#E9EDF1', py: { xs: 8, md: 10 } }}
+      sx={{ backgroundColor: '#141D2E', py: { xs: 8, md: 10 } }}
     >
       <script
         type="application/ld+json"
@@ -64,24 +64,24 @@ export default function FaqSection() {
             <Box textAlign="center" mb={6}>
               <Typography
                 variant="overline"
-                sx={{ color: '#DC2626', letterSpacing: '0.1em', fontWeight: 600, fontSize: '0.8125rem' }}
+                sx={{ color: '#EF4444', letterSpacing: '0.1em', fontWeight: 600, fontSize: '0.8125rem' }}
               >
                 Got Questions?
               </Typography>
               <Typography
                 id="faq-heading"
                 variant="h2"
-                sx={{ fontWeight: 700, fontSize: { xs: '1.875rem', md: '2.25rem' }, color: '#1E293B', mt: 0.5, mb: 2 }}
+                sx={{ fontWeight: 700, fontSize: { xs: '1.875rem', md: '2.25rem' }, color: '#F1F5F9', mt: 0.5, mb: 2 }}
               >
                 Frequently Asked Questions
               </Typography>
-              <Box sx={{ width: 56, height: 4, backgroundColor: '#DC2626', borderRadius: 1, mx: 'auto' }} />
+              <Box sx={{ width: 56, height: 4, backgroundColor: '#EF4444', borderRadius: 1, mx: 'auto' }} />
             </Box>
 
             {FAQS.map(({ q, a }, i) => (
               <Accordion key={q} disableGutters>
                 <AccordionSummary
-                  expandIcon={<ExpandMoreIcon sx={{ color: '#DC2626' }} />}
+                  expandIcon={<ExpandMoreIcon sx={{ color: '#EF4444' }} />}
                   aria-controls={`faq-${i}-content`}
                   id={`faq-${i}-header`}
                 >

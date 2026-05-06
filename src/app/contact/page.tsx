@@ -55,7 +55,7 @@ export default function ContactPage() {
       {/* Page header */}
       <Box
         sx={{
-          background: 'linear-gradient(135deg, #0F172A 0%, #334155 100%)',
+          background: 'linear-gradient(135deg, #080C14 0%, #1A2440 100%)',
           pt: { xs: '96px', md: '104px' },
           pb: { xs: 6, md: 7 },
         }}
@@ -63,7 +63,7 @@ export default function ContactPage() {
         <Container maxWidth="lg">
           <Typography
             variant="overline"
-            sx={{ color: '#DC2626', letterSpacing: '0.1em', fontWeight: 600, fontSize: '0.8125rem', display: 'block', mb: 1 }}
+            sx={{ color: '#EF4444', letterSpacing: '0.1em', fontWeight: 600, fontSize: '0.8125rem', display: 'block', mb: 1 }}
           >
             Free Quote
           </Typography>
@@ -87,7 +87,7 @@ export default function ContactPage() {
       <Box
         component="section"
         aria-label="Contact form and details"
-        sx={{ backgroundColor: '#F8FAFC', py: { xs: 6, md: 8 } }}
+        sx={{ backgroundColor: '#0D1117', py: { xs: 6, md: 8 } }}
       >
         <Container maxWidth="lg">
           <Grid container spacing={5}>
@@ -102,7 +102,7 @@ export default function ContactPage() {
                 <CardContent sx={{ p: 4 }}>
                   <Typography
                     variant="h6"
-                    sx={{ fontWeight: 700, color: '#1E293B', mb: 3, fontSize: '1.125rem' }}
+                    sx={{ fontWeight: 700, color: '#F1F5F9', mb: 3, fontSize: '1.125rem' }}
                   >
                     Get in Touch
                   </Typography>
@@ -114,8 +114,8 @@ export default function ContactPage() {
                           width: 44,
                           height: 44,
                           borderRadius: 2,
-                          background: 'rgba(220,38,38,0.08)',
-                          color: '#DC2626',
+                          background: 'rgba(239,68,68,0.12)',
+                          color: '#EF4444',
                           display: 'flex',
                           alignItems: 'center',
                           justifyContent: 'center',
@@ -125,18 +125,18 @@ export default function ContactPage() {
                         {icon}
                       </Box>
                       <Box>
-                        <Typography sx={{ fontSize: '0.8125rem', color: '#64748B', fontWeight: 600, mb: 0.25 }}>
+                        <Typography sx={{ fontSize: '0.8125rem', color: '#94A3B8', fontWeight: 600, mb: 0.25 }}>
                           {label}
                         </Typography>
                         {href ? (
                           <MuiLink
                             href={href}
-                            sx={{ color: '#1E293B', fontWeight: 500, textDecoration: 'none', '&:hover': { color: '#DC2626' } }}
+                            sx={{ color: '#F1F5F9', fontWeight: 500, textDecoration: 'none', '&:hover': { color: '#EF4444' } }}
                           >
                             {value}
                           </MuiLink>
                         ) : (
-                          <Typography sx={{ color: '#1E293B', fontWeight: 500 }}>{value}</Typography>
+                          <Typography sx={{ color: '#F1F5F9', fontWeight: 500 }}>{value}</Typography>
                         )}
                       </Box>
                     </Box>
@@ -145,12 +145,12 @@ export default function ContactPage() {
               </Card>
 
               {/* Trust signal */}
-              <Card sx={{ borderRadius: 3, borderLeft: '4px solid #DC2626' }}>
+              <Card sx={{ borderRadius: 3, borderLeft: '4px solid #EF4444' }}>
                 <CardContent sx={{ p: 3.5 }}>
-                  <Typography sx={{ fontFamily: '"Lexend", sans-serif', fontWeight: 700, color: '#1E293B', mb: 1 }}>
+                  <Typography sx={{ fontFamily: '"Lexend", sans-serif', fontWeight: 700, color: '#F1F5F9', mb: 1 }}>
                     No obligation, ever.
                   </Typography>
-                  <Typography variant="body2" sx={{ color: '#64748B', lineHeight: 1.75 }}>
+                  <Typography variant="body2" sx={{ color: '#94A3B8', lineHeight: 1.75 }}>
                     We only charge if you accept a deal we negotiate. If we can&apos;t beat your existing offer, you pay nothing.
                   </Typography>
                 </CardContent>

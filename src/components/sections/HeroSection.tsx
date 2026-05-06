@@ -11,7 +11,7 @@ export default function HeroSection() {
       component="section"
       aria-label="Hero"
       sx={{
-        background: 'linear-gradient(135deg, #0F172A 0%, #334155 100%)',
+        background: 'linear-gradient(135deg, #080C14 0%, #1A2440 100%)',
         minHeight: '90dvh',
         display: 'flex',
         alignItems: 'center',
@@ -35,7 +35,7 @@ export default function HeroSection() {
             <Typography
               variant="overline"
               sx={{
-                color: '#DC2626',
+                color: '#EF4444',
                 letterSpacing: '0.1em',
                 fontWeight: 600,
                 fontSize: '0.8125rem',
@@ -58,7 +58,7 @@ export default function HeroSection() {
             >
               Stop Overpaying.{' '}
               <Box component="br" sx={{ display: { xs: 'none', sm: 'block' } }} />
-              <Box component="span" sx={{ color: '#DC2626' }}>
+              <Box component="span" sx={{ color: '#EF4444' }}>
                 We Negotiate.
               </Box>{' '}
               You Save.
@@ -114,8 +114,8 @@ export default function HeroSection() {
               <Box
                 sx={{
                   borderRadius: 3,
-                  background: 'rgba(255,255,255,0.07)',
-                  border: '1px solid rgba(255,255,255,0.12)',
+                  background: 'rgba(255,255,255,0.04)',
+                  border: '1px solid rgba(255,255,255,0.1)',
                   backdropFilter: 'blur(8px)',
                   p: 3,
                   display: 'grid',
@@ -135,7 +135,7 @@ export default function HeroSection() {
                         fontFamily: 'var(--font-lexend), "Lexend", sans-serif',
                         fontWeight: 700,
                         fontSize: '1.5rem',
-                        color: '#DC2626',
+                        color: '#EF4444',
                         lineHeight: 1.1,
                         fontVariantNumeric: 'tabular-nums',
                       }}
@@ -155,11 +155,11 @@ export default function HeroSection() {
                 sx={{
                   m: 0,
                   borderRadius: 3,
-                  background: 'rgba(255,255,255,0.07)',
-                  border: '1px solid rgba(255,255,255,0.12)',
+                  background: 'rgba(255,255,255,0.04)',
+                  border: '1px solid rgba(255,255,255,0.1)',
                   backdropFilter: 'blur(8px)',
                   p: 3,
-                  borderLeft: '4px solid #DC2626',
+                  borderLeft: '4px solid #EF4444',
                 }}
               >
                 <Typography
@@ -175,7 +175,7 @@ export default function HeroSection() {
                   <Chip
                     label="$3,800 saved"
                     size="small"
-                    sx={{ backgroundColor: 'rgba(220,38,38,0.2)', color: '#FCA5A5', fontWeight: 600, fontSize: '0.75rem', height: 24 }}
+                    sx={{ backgroundColor: 'rgba(239,68,68,0.2)', color: '#FCA5A5', fontWeight: 600, fontSize: '0.75rem', height: 24 }}
                   />
                 </Box>
               </Box>

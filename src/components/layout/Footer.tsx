@@ -46,7 +46,7 @@ export default function Footer() {
     <Box
       component="footer"
       aria-label="Site footer"
-      sx={{ backgroundColor: '#0F172A', color: 'rgba(255,255,255,0.75)', pt: 7, pb: 4 }}
+      sx={{ backgroundColor: '#080C14', color: 'rgba(255,255,255,0.75)', pt: 7, pb: 4 }}
     >
       <Container maxWidth="lg">
         <Grid container spacing={4} pb={5} sx={{ borderBottom: '1px solid rgba(255,255,255,0.1)' }}>
@@ -56,7 +56,7 @@ export default function Footer() {
               sx={{ color: '#fff', fontFamily: '"Lexend", sans-serif', fontWeight: 700, fontSize: '1.25rem', mb: 1.5 }}
             >
               CG{' '}
-              <Box component="span" sx={{ color: '#DC2626' }}>
+              <Box component="span" sx={{ color: '#EF4444' }}>
                 AutoEdge
               </Box>
             </Typography>

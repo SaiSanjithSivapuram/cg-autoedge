@@ -3,17 +3,17 @@
 
 /* ─── Design Tokens ─────────────────────────────────────────────────────── */
 :root {
-  --ae-primary:       #1E293B;
-  --ae-primary-dark:  #0F172A;
-  --ae-secondary:     #334155;
-  --ae-accent:        #DC2626;
-  --ae-accent-hover:  #B91C1C;
-  --ae-bg:            #F8FAFC;
-  --ae-fg:            #0F172A;
-  --ae-muted:         #E9EDF1;
-  --ae-muted-fg:      #64748B;
-  --ae-border:        #E2E8F0;
-  --ae-card:          #FFFFFF;
+  --ae-primary:       #1A2440;
+  --ae-primary-dark:  #080C14;
+  --ae-secondary:     #243356;
+  --ae-accent:        #EF4444;
+  --ae-accent-hover:  #DC2626;
+  --ae-bg:            #0D1117;
+  --ae-fg:            #F1F5F9;
+  --ae-muted:         #141D2E;
+  --ae-muted-fg:      #94A3B8;
+  --ae-border:        rgba(255,255,255,0.1);
+  --ae-card:          #1A2440;
   --ae-font-heading:  'Lexend', sans-serif;
   --ae-font-body:     'Source Sans 3', sans-serif;
 }

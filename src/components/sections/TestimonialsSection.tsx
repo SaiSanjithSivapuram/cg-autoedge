@@ -56,7 +56,7 @@ function StarRating() {
   return (
     <Box sx={{ display: 'flex', gap: 0.25, mb: 2 }} aria-label="5 out of 5 stars">
       {Array.from({ length: 5 }).map((_, i) => (
-        <StarIcon key={i} sx={{ color: '#DC2626', fontSize: '1.125rem' }} aria-hidden="true" />
+        <StarIcon key={i} sx={{ color: '#EF4444', fontSize: '1.125rem' }} aria-hidden="true" />
       ))}
     </Box>
   );
@@ -68,27 +68,27 @@ export default function TestimonialsSection() {
       id="testimonials"
       component="section"
       aria-labelledby="testimonials-heading"
-      sx={{ backgroundColor: '#F8FAFC', py: { xs: 8, md: 10 } }}
+      sx={{ backgroundColor: '#0D1117', py: { xs: 8, md: 10 } }}
     >
       <Container maxWidth="lg">
         <Box textAlign="center" mb={7}>
           <Typography
             variant="overline"
-            sx={{ color: '#DC2626', letterSpacing: '0.1em', fontWeight: 600, fontSize: '0.8125rem' }}
+            sx={{ color: '#EF4444', letterSpacing: '0.1em', fontWeight: 600, fontSize: '0.8125rem' }}
           >
             Real Results
           </Typography>
           <Typography
             id="testimonials-heading"
             variant="h2"
-            sx={{ fontWeight: 700, fontSize: { xs: '1.875rem', md: '2.25rem' }, color: '#1E293B', mt: 0.5, mb: 2 }}
+            sx={{ fontWeight: 700, fontSize: { xs: '1.875rem', md: '2.25rem' }, color: '#F1F5F9', mt: 0.5, mb: 2 }}
           >
             What Our Clients Say
           </Typography>
-          <Box sx={{ width: 56, height: 4, backgroundColor: '#DC2626', borderRadius: 1, mx: 'auto', mb: 2.5 }} />
+          <Box sx={{ width: 56, height: 4, backgroundColor: '#EF4444', borderRadius: 1, mx: 'auto', mb: 2.5 }} />
           <Typography
             variant="body1"
-            sx={{ color: '#64748B', maxWidth: 520, mx: 'auto', lineHeight: 1.75 }}
+            sx={{ color: '#94A3B8', maxWidth: 520, mx: 'auto', lineHeight: 1.75 }}
           >
             Over 3,500 happy clients and counting. Here&apos;s what they have to say.
           </Typography>
@@ -103,7 +103,7 @@ export default function TestimonialsSection() {
                   height: '100%',
                   m: 0,
                   borderRadius: 3,
-                  borderLeft: '4px solid #DC2626',
+                  borderLeft: '4px solid #EF4444',
                 }}
               >
                 <CardContent sx={{ p: 3.5, display: 'flex', flexDirection: 'column', height: '100%' }}>
@@ -111,7 +111,7 @@ export default function TestimonialsSection() {
                   <Typography
                     component="blockquote"
                     variant="body2"
-                    sx={{ color: '#0F172A', lineHeight: 1.75, flexGrow: 1, mb: 2.5, m: 0 }}
+                    sx={{ color: '#CBD5E1', lineHeight: 1.75, flexGrow: 1, mb: 2.5, m: 0 }}
                   >
                     &ldquo;{quote}&rdquo;
                   </Typography>
@@ -122,17 +122,17 @@ export default function TestimonialsSection() {
                       alignItems: 'center',
                       justifyContent: 'space-between',
                       pt: 2,
-                      borderTop: '1px solid #E2E8F0',
+                      borderTop: '1px solid rgba(255,255,255,0.1)',
                       mt: 'auto',
                     }}
                   >
                     <Box>
                       <Typography
-                        sx={{ fontFamily: '"Lexend", sans-serif', fontWeight: 700, fontSize: '0.9375rem', color: '#1E293B' }}
+                        sx={{ fontFamily: '"Lexend", sans-serif', fontWeight: 700, fontSize: '0.9375rem', color: '#F1F5F9' }}
                       >
                         {name}
                       </Typography>
-                      <Typography sx={{ color: '#64748B', fontSize: '0.8125rem' }}>
+                      <Typography sx={{ color: '#94A3B8', fontSize: '0.8125rem' }}>
                         {role}
                       </Typography>
                     </Box>
@@ -140,8 +140,8 @@ export default function TestimonialsSection() {
                       label={savings}
                       size="small"
                       sx={{
-                        backgroundColor: 'rgba(220,38,38,0.09)',
-                        color: '#DC2626',
+                        backgroundColor: 'rgba(239,68,68,0.15)',
+                        color: '#EF4444',
                         fontWeight: 600,
                         fontSize: '0.8rem',
                         height: 26,

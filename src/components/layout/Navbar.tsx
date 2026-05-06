@@ -60,10 +60,10 @@ export default function Navbar() {
         position="fixed"
         aria-label="Main navigation"
         sx={{
-          backgroundColor: scrolled ? '#0F172A' : '#1E293B',
+          backgroundColor: scrolled ? '#080C14' : '#1A2440',
           boxShadow: scrolled
-            ? '0 2px 12px rgba(15,23,42,0.3)'
-            : '0 1px 8px rgba(15,23,42,0.2)',
+            ? '0 2px 12px rgba(0,0,0,0.5)'
+            : '0 1px 8px rgba(0,0,0,0.35)',
           transition: 'background-color 300ms ease, box-shadow 300ms ease',
         }}
       >
@@ -114,7 +114,7 @@ export default function Navbar() {
               }}
             >
               CG{' '}
-              <Box component="span" sx={{ color: '#DC2626' }}>
+              <Box component="span" sx={{ color: '#EF4444' }}>
                 AutoEdge
               </Box>
             </Typography>
@@ -169,7 +169,7 @@ export default function Navbar() {
         anchor="right"
         open={drawerOpen}
         onClose={() => setDrawerOpen(false)}
-        PaperProps={{ sx: { width: 280, backgroundColor: '#1E293B' } }}
+        PaperProps={{ sx: { width: 280, backgroundColor: '#0D1117' } }}
       >
         <Box
           sx={{

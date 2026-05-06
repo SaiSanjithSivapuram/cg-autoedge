@@ -9,7 +9,7 @@ export default function CtaSection() {
       component="section"
       aria-labelledby="cta-heading"
       sx={{
-        background: 'linear-gradient(135deg, #0F172A 0%, #334155 100%)',
+        background: 'linear-gradient(135deg, #080C14 0%, #1A2440 100%)',
         py: { xs: 8, md: 10 },
       }}
     >

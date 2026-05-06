@@ -80,27 +80,27 @@ export default function ServicesSection() {
       id="services"
       component="section"
       aria-labelledby="services-heading"
-      sx={{ backgroundColor: '#E9EDF1', py: { xs: 8, md: 10 } }}
+      sx={{ backgroundColor: '#141D2E', py: { xs: 8, md: 10 } }}
     >
       <Container maxWidth="lg">
         <Box textAlign="center" mb={7}>
           <Typography
             variant="overline"
-            sx={{ color: '#DC2626', letterSpacing: '0.1em', fontWeight: 600, fontSize: '0.8125rem' }}
+            sx={{ color: '#EF4444', letterSpacing: '0.1em', fontWeight: 600, fontSize: '0.8125rem' }}
           >
             What We Do
           </Typography>
           <Typography
             id="services-heading"
             variant="h2"
-            sx={{ fontWeight: 700, fontSize: { xs: '1.875rem', md: '2.25rem' }, color: '#1E293B', mt: 0.5, mb: 2 }}
+            sx={{ fontWeight: 700, fontSize: { xs: '1.875rem', md: '2.25rem' }, color: '#F1F5F9', mt: 0.5, mb: 2 }}
           >
             Our Services
           </Typography>
-          <Box sx={{ width: 56, height: 4, backgroundColor: '#DC2626', borderRadius: 1, mx: 'auto', mb: 2.5 }} />
+          <Box sx={{ width: 56, height: 4, backgroundColor: '#EF4444', borderRadius: 1, mx: 'auto', mb: 2.5 }} />
           <Typography
             variant="body1"
-            sx={{ color: '#64748B', maxWidth: 560, mx: 'auto', lineHeight: 1.75 }}
+            sx={{ color: '#94A3B8', maxWidth: 560, mx: 'auto', lineHeight: 1.75 }}
           >
             Every service is built around one goal — putting more money back in your pocket.
           </Typography>
@@ -117,8 +117,8 @@ export default function ServicesSection() {
                       width: 56,
                       height: 56,
                       borderRadius: 2,
-                      background: 'rgba(220,38,38,0.08)',
-                      color: '#DC2626',
+                      background: 'rgba(239,68,68,0.12)',
+                      color: '#EF4444',
                       display: 'flex',
                       alignItems: 'center',
                       justifyContent: 'center',
@@ -129,11 +129,11 @@ export default function ServicesSection() {
                   </Box>
                   <Typography
                     variant="h6"
-                    sx={{ fontWeight: 700, fontSize: '1.0625rem', color: '#1E293B', mb: 1.5 }}
+                    sx={{ fontWeight: 700, fontSize: '1.0625rem', color: '#F1F5F9', mb: 1.5 }}
                   >
                     {title}
                   </Typography>
-                  <Typography variant="body2" sx={{ color: '#64748B', lineHeight: 1.75 }}>
+                  <Typography variant="body2" sx={{ color: '#94A3B8', lineHeight: 1.75 }}>
                     {description}
                   </Typography>
                 </CardContent>
