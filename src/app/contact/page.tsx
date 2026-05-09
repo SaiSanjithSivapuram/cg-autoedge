@@ -92,12 +92,12 @@ export default function ContactPage() {
         <Container maxWidth="lg">
           <Grid container spacing={5}>
             {/* Form */}
-            <Grid item xs={12} lg={7}>
+            <Grid item xs={12} lg={12}>
               <ContactForm />
             </Grid>
 
             {/* Contact info */}
-            <Grid item xs={12} lg={5}>
+            <Grid item xs={12} lg={12}>
               <Card sx={{ borderRadius: 3, mb: 3 }}>
                 <CardContent sx={{ p: 4 }}>
                   <Typography
@@ -144,15 +144,55 @@ export default function ContactPage() {
                 </CardContent>
               </Card>
 
-              {/* Trust signal */}
+              {/* Pricing signal */}
               <Card sx={{ borderRadius: 3, borderLeft: '4px solid #EF4444' }}>
                 <CardContent sx={{ p: 3.5 }}>
-                  <Typography sx={{ fontFamily: '"Lexend", sans-serif', fontWeight: 700, color: '#F1F5F9', mb: 1 }}>
-                    No obligation, ever.
+                  <Box sx={{ display: 'flex', alignItems: 'center', gap: 1.5, mb: 1.25 }}>
+                    <Box
+                      sx={{
+                        width: 36,
+                        height: 36,
+                        borderRadius: 1.5,
+                        backgroundColor: 'rgba(239,68,68,0.12)',
+                        color: '#EF4444',
+                        display: 'flex',
+                        alignItems: 'center',
+                        justifyContent: 'center',
+                        flexShrink: 0,
+                      }}
+                    >
+                      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                        <line x1="12" y1="1" x2="12" y2="23" />
+                        <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" />
+                      </svg>
+                    </Box>
+                    <Typography sx={{ fontFamily: 'var(--font-lexend)', fontWeight: 700, color: '#F1F5F9', fontSize: '1rem' }}>
+                      Simple, performance-based pricing.
+                    </Typography>
+                  </Box>
+                  <Typography variant="body2" sx={{ color: '#94A3B8', lineHeight: 1.8, mb: 2 }}>
+                    You only pay when we deliver a deal you&apos;re happy with. No upfront fees, no hidden charges — ever.
                   </Typography>
-                  <Typography variant="body2" sx={{ color: '#94A3B8', lineHeight: 1.75 }}>
-                    We only charge if you accept a deal we negotiate. If we can&apos;t beat your existing offer, you pay nothing.
-                  </Typography>
+                  <MuiLink
+                    href="/pricing"
+                    sx={{
+                      display: 'inline-flex',
+                      alignItems: 'center',
+                      gap: 0.75,
+                      color: '#EF4444',
+                      fontWeight: 600,
+                      fontSize: '0.875rem',
+                      textDecoration: 'none',
+                      fontFamily: 'var(--font-lexend)',
+                      '&:hover': { color: '#F87171' },
+                      transition: 'color 0.2s',
+                    }}
+                  >
+                    View full pricing details
+                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                      <path d="M3 7 H11 M7.5 3.5 L11 7 L7.5 10.5" />
+                    </svg>
+                  </MuiLink>
                 </CardContent>
               </Card>
             </Grid>
